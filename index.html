@@ -1,18 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Band&#129138;Gogh</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
 
-<body>
+  <body>
+    <!-- Everything should go inside the container to keep responsiveness. -->
+    <div class="container">
+        <!--Modal open button, we can change this or move it wherever-->
+      <button class="button js-modal-trigger" data-target="modal-form">
+        Search for a song, band, or city.
+      </button>
 
-    
+      <!-- Modal form.  This can go wherever on the document since it's not in the normal flow -->
+      <div class="modal" id="modal-form">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+          <form>
+            <div class="field is-grouped">
+              <label class="field-label">Search by song</label>
+              <div class="control">
+                <input
+                  class="input"
+                  type="text"
+                  placeholder="Enter a song name"
+                />
+              </div>
+              <div class="control">
+                <button class="button is-danger">Submit</button>
+              </div>
+            </div>
+            <div class="field is-grouped">
+              <label class="field-label is-white">Search by artist</label>
+              <div class="control">
+                <input
+                  class="input"
+                  type="text"
+                  placeholder="Enter an artist"
+                />
+              </div>
+              <div class="control">
+                <button class="button is-link">Submit</button>
+              </div>
+            </div>
+            <div class="field is-grouped">
+              <label class="field-label">Search by city</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="Enter a city" />
+              </div>
+              <div class="control">
+                <button class="button is-success">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+      </div>
+    </div>
+
     <script src="./assets/js/homepage.js"></script>
-</body>
-
+  </body>
 </html>
