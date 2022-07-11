@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Band&#129138;Gogh</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+  </head>
+
+  <body>
+    <header>
+        <div id="name-slogan-flex-wrapper">
+            <h1 class="name-title">BAND-GOGH</h1>
+            <h4 class="slogan-title"><i>Song lyrics, artist info, tour dates <br /> of your favorite bands & MORE!</i></h4>
+        </div>
+            <div id="input-container-wrapper">
+                <div class="input-container">
+                    <div class="input-info">Looking for more information about your favorite artists?</div>
+                        <div class="input-wrapper">
+                            <input type="text" id="artist-title-input" placeholder="Name of Artist">
+                        </div>
+                </div>
+                <div class="input-container">
+                    <div class="input-info">Type in a song name and you'll get lyrics, artist info, tour dates, and more!</div>
+                        <div class="input-wrapper"> 
+                            <input type="text" id="song-title-input" placeholder="Song Title">
+                        </div>
+                </div>
+                <div class="input-container">
+                    <div class="input-info">Name your desired location for upcoming events in that area!</div>
+                        <div class="input-wrapper">    
+                            <input type="text" id="location-title-input" placeholder="Location">
+                        </div>    
+                </div>
+            </div> 
+
+    </header>
+
+    <main>
+        <div id="main-content-display-artist">
+            <div class="artist-band-title">Band Name</div>
+            <div id="artist-input-display-container">
+                <div id="song-list-container-wrapper">
+                    <div id="song-list-container">
+                        <div id="song-list-title">Top 5 Songs</div>
+                        <ol>
+                            <!--list of songs via eventListener-->
+                            <li>The Come Down</li>
+                            <li>The Come Down</li>
+                            <li>The Come Down</li>
+                            <li>The Come Down</li>
+                            <li>The Come Down</li>
+                        </ol>
+                    </div>
+                </div>
+                <div id="tour-date-flex-container-wrapper">
+                    <div class="tour-info-wrapper">
+                        <div id="city-name" class="tour-title">City:
+                        <span class="tour-city">Raleigh</span>
+                    </div>    
+                    </div>  
+                    <div class="tour-info-wrapper">
+                        <div id="venue-name" class="tour-title">Venue:
+                        <span class="tour-venue">The Ritz</span>
+                    </div>
+                    </div>  
+                    <div class="tour-info-wrapper">
+                        <div id="time-name" class="tour-title">Time:   
+                        <span class="tour-time">2:30pm - 5:00pm</span>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./assets/js/homepage.js"></script>
+  </body>
+</html>
